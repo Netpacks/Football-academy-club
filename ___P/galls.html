@@ -1,0 +1,84 @@
+
+  
+
+
+
+<div class="container row">
+
+<form action="galls-get.php" id="galeryform" method="post">
+<input type="file" name="img" id="galo" style="width: 0; height: 0;display: none;" onchange='$trigger("galbtn")'>
+    <input type="submit"  style="width: 0; height: 0;display: none;"  name="submit" id="galbtn">
+</form>
+
+    <div class="col-lg-1 m-2 col-5 rounded p-3 btn" onclick='$trigger("galo")' style="height: 50px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="image.svg" alt="add_file" style="width: 100%;border-radius: 50px;">
+         
+         </div>
+        <div id="list_gal" ></div>
+
+    <div class="col-lg-3 m-2 col-5 rounded" style="height: 250px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="ADMIN_files/images_006r.jpg" alt="" style="width: 100%;border-radius: 50px;">
+         <div class="p-2 fw-bold btn btn-danger" style="position: absolute; top: -5px; right: -5px;" onclick="Sci.delete('<?php echo $Sci_id; ?>','deleteimg.php')">Delete</div>
+         
+         </div>
+               
+
+    <div class="col-lg-3 m-2 col-5 rounded" style="height: 250px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="ADMIN_files/images_006r.jpg" alt="" style="width: 100%;border-radius: 50px;">
+         <div class="p-2 fw-bold btn btn-danger" style="position: absolute; top: -5px; right: -5px;" onclick="Sci.delete('<?php echo $Sci_id; ?>','deleteimg.php')">Delete</div>
+         
+         </div>
+               
+
+    <div class="col-lg-3 m-2 col-5 rounded" style="height: 250px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="ADMIN_files/images_006r.jpg" alt="" style="width: 100%;border-radius: 50px;">
+         <div class="p-2 fw-bold btn btn-danger" style="position: absolute; top: -5px; right: -5px;" onclick="Sci.delete('<?php echo $Sci_id; ?>','deleteimg.php')">Delete</div>
+         
+         </div>
+               
+
+    <div class="col-lg-3 m-2 col-5 rounded" style="height: 250px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="ADMIN_files/images_006r.jpg" alt="" style="width: 100%;border-radius: 50px;">
+         <div class="p-2 fw-bold btn btn-danger" style="position: absolute; top: -5px; right: -5px;" onclick="Sci.delete('<?php echo $Sci_id; ?>','deleteimg.php')">Delete</div>
+         
+         </div>
+               
+
+    <div class="col-lg-3 m-2 col-5 rounded" style="height: 250px; position: relative;background-position: center; background-image: url('/ADMIN_files/Shop-20_7450eb07-e395-4b17-8e47-cc27156cfd7f.webp');">
+        <img src="ADMIN_files/images_006r.jpg" alt="" style="width: 100%;border-radius: 50px;">
+         <div class="p-2 fw-bold btn btn-danger" style="position: absolute; top: -5px; right: -5px;" onclick="Sci.delete('<?php echo $Sci_id; ?>','deleteimg.php')">Delete</div>
+         
+         </div>
+                                                                                                                                                                                                                                                                          
+
+
+</div>
+
+
+
+
+
+
+<script>
+
+
+    $("#galeryform").on('submit',function(e){
+    
+    e.preventDefault();
+    
+    $(this).ajaxSubmit({
+    
+        success: function(data){
+var d = data;
+var e =  2;
+if (d == e) {
+
+    $space_nav_loader('galls.html','sign','s-btn3')
+}
+    } 
+    
+    });
+    });
+    
+    
+    </script>

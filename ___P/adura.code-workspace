@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\topKonect v0.3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mr web"
+	}
+}
