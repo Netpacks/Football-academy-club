@@ -1,7 +1,9 @@
 
 
 
-
+admin{
 gmail : topkonnect@gmail.com
-psw : topkonnect
+psw : topkonnect}
+
+database{__p/db}
 
