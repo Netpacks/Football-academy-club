@@ -1,0 +1,183 @@
+
+<html>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="SciDream.Dev contributors">
+    <title>Installation of Packages || Develope By SciDream</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
+ <link rel="shortcut icon" href="upload.svg" type="image/x-icon">
+<link rel="apple-touch-icon" href="upload.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="upload.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="upload.svg">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="shortcut icon" href="upload.svg" type="image/x-icon">
+
+
+<script src="../Topkonect_Admin/ADMIN_files/jquery-3.6.0.min.js"></script> 
+<script src="../Topkonect_Admin/ADMIN_files/jquery.form.min.js"></script> 
+<script src="../Topkonect_Admin/ADMIN_files/jquery.maxlength.js"></script> 
+<!-- Bootstrap core CSS -->
+<link href="../Topkonect_Admin/ADMIN_files/bootstrap.css" rel="stylesheet">
+
+     <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="../Topkonect_Admin/ADMIN_files/sidebars.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="../Topkonect_Admin/ADMIN_files/headers.css" rel="stylesheet">
+  
+<body class="sidoscroll" >
+<br><br>
+
+
+
+
+
+
+
+
+<center>
+
+
+
+<div class="container p-3">
+
+
+
+
+<h2 style="font-weight: bolder;">  <a href="#" class="d-block link-dark text-decoration-none mx-3" style="outline: 0; font-size: 20px; font-weight: bolder; white-space: nowrap;">
+    <strong style="color:#006ff7;"> Top<strong style="color:#0d468b;font-size:30px;">K</strong><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="" viewBox="0 0 16 16">
+ <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+ <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>nect</strong>
+
+     </a> Installation </h2>
+<br>
+
+
+    
+                
+                
+
+<div class="d-dural-flex-child1 p-2">
+
+
+    <small class="text-muted" id="datadiv"></small>
+</div>
+
+
+<div class="bg-light p-3 col-lg-8" style="border-radius: 20px; border: 1px solid rgb(230, 227, 227);">
+                        
+
+    <form class="p-4 p-md-5 border rounded-3 bg-light" method="post" action="../installation.php" id="security">
+        <div class="form-floating mb-3">
+            <input type="text" name="dbname" required="" class="form-control" id="floatingiInput" placeholder="">
+            <label for="floatingiInput">Database Name</label>
+          </div>
+
+          
+        <div class="form-floating mb-3">
+            <input type="password" required="" name="dbpass" class="form-control" id="floatingtPassword" placeholder="Password">
+            <label for="floatingtPassword">Database Password</label>
+          </div>   
+
+          <div class="form-floating mb-3">
+            <input type="text" name="hostname" required="" class="form-control" id="floatingyInput" placeholder="">
+            <label for="floatingyInput">Hostname</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" name="username" required="" class="form-control" id="floatinghInput" placeholder="">
+            <label for="floatinghInput">Username</label>
+          </div>
+    
+        <button class="w-100 btn btn-lg btn-primary bg-twist" type="submit" style="border: none;">Enter</button>
+        <hr class="my-4">
+        <small class="text-muted"><span style="color:pink;">Make sure you carefully fill in the form</span> No recorvery if mistake was made </small>
+      </form>
+                             
+                                          
+                                              
+</div>
+</div>
+                
+</div>
+</center>
+<script>
+  
+
+
+$("#security").on('submit',function(e){
+
+  e.preventDefault();
+
+$(this).ajaxSubmit({
+
+success: function(data){
+  var d = data;
+  var e =  2;
+  if (d == e) {
+    $("#datadiv").html('<strong style="color:green;">Logging in......</strong>'); 
+
+setTimeout(function () {
+  // body...
+  
+  window.location.replace('home.php');
+
+
+  },3000);
+
+
+  }
+  else{
+$("#datadiv").html(data); 
+}
+} 
+
+});
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<footer class="footer mt-5 py-3 text-white bg-twist-bold">
+
+          <center>
+  <p style="font-weight:800;">Admin Develope and Design By <a href="http://www.durallite.epizy.com">Durallite</a> Packages</p>
+</center>
+    
+</footer>
+  
+<!-- footer -->
+<!-- end footer --> 
+
+
+
+
+</body></html>
