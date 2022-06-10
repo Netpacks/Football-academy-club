@@ -80,7 +80,7 @@ CREATE TABLE `anti` (
 --
 
 INSERT INTO `anti` (`user282200123`, `password282200123`) VALUES
-('topkonnect@gmail.com', '$2y$10$NOGnx/olR2gbPEF2s.dEp..5qM8cWmwuf9b.WpdQrbBD7oE0zoMnW');
+('Netpackagez@gmail.com', '$2y$10$NOGnx/olR2gbPEF2s.dEp..5qM8cWmwuf9b.WpdQrbBD7oE0zoMnW');
 
 -- --------------------------------------------------------
 
